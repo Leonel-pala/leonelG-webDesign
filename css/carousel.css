@@ -1,0 +1,91 @@
+section {
+  position: relative;
+  width: 600px;
+  margin: auto;
+  height: 271px;
+  min-height: 271px;
+  border: #441a70 solid 10px;
+}
+
+.image {
+  height: 271px;
+  min-height: 271px;
+  width: 600px;
+  animation: slide 0.5s linear;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#leftArrow {
+  all: unset;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.5rem;
+  color: #441a70;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#rightArrow {
+  all: unset;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0.5rem;
+  color: #441a70;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#leftArrow:hover,
+#rightArrow:hover {
+  background: rgb(0, 0, 0, 0.2);
+}
+
+aside {
+  margin: 1rem auto;
+  color: #01012b;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+a {
+  color: #ff2a6d;
+}
+
+@media (max-width: 767px) {
+  section {
+    width: 100%;
+    height: max-content;
+    min-height: max-content;
+    aspect-ratio: 2.21;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: #441a70 solid 4px;
+    background: rgb(34, 34, 34);
+  }
+
+  #leftArrow:hover,
+  #rightArrow:hover {
+    background: rgba(0, 0, 0, 0);
+  }
+  .image {
+    height: max-content;
+    min-height: max-content;
+    width: 100%;
+    animation: slide 0.5s linear;
+    object-fit: cover;
+  }
+}

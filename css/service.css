@@ -1,0 +1,74 @@
+#service {
+  width: 100%;
+  min-height: 100vh;
+  background: #f0f0f0;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#service-title {
+  text-align: center;
+  position: relative;
+  max-width: max-content;
+  margin: auto;
+}
+
+#service-conteinerCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  height: max-content;
+  padding: 0 10px;
+}
+.service-card {
+  width: 350px;
+  height: 280px;
+  position: relative;
+  text-align: center;
+  border: 1px solid #ccc;
+  background: #ffff;
+  color: #5e239d;
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+}
+.card-img {
+  position: relative;
+  height: 80px;
+  border-radius: 10px;
+  padding: 10px;
+  top: 0;
+}
+ul {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+#service-moreDatils {
+  text-decoration: unset;
+  background: #5e239d;
+  color: #fff;
+  box-sizing: content-box;
+  top: 0;
+  font-size: 30px;
+  padding: 5px 10px;
+  width: max-content;
+  margin: 0 auto;
+}
+#service-moreDatils {
+  text-decoration: unset;
+  background: #5e239d;
+  color: #fff;
+  box-sizing: content-box;
+  top: 0;
+  font-size: 30px;
+  padding: 5px 10px;
+  width: max-content;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+}

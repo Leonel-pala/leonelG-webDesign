@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/aboutMe.css" />
+    <link rel="stylesheet" href="./css/service.css" />
+    <link rel="stylesheet" href="./css/demo.css" />
+    <link rel="stylesheet" href="./css/observed.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <link rel="stylesheet" href="./css/contactMe.css" />
+    <title>LeoG. WebDesign</title>
+  </head>
+  <body>
+      <header>
+        <img src="./public/logo.png" alt="logo" id="img-logo" />
+        <img src="./public/lines.png" alt="icon-lines" id="icon-lines" />
+        <nav id="nav-page">
+          <a href="#home" id="nav-home" class="navSection active">Inicio</a>
+          <a href="#aboutMe" id="nav-aboutMe" class="navSection">Sobre mi</a>
+          <a href="#service " id="nav-service" class="navSection">Servicio</a>
+          <a href="#demo" id="nav-demo" class="navSection">Demo</a>
+          <a href="#contactMe" id="nav-contactMe" class="navSection"
+            >Contactame</a
+          >
+          <span id="indicator"></span>
+        </nav>
+        <div id="background-navActive"></div>
+      </header>
+      <main>
+        <section id="home">
+          <span id="observed-home" class="observed-elements"></span>
+          <div id="home-imgBackground">
+            <div id="home-profile">
+              <img id="home-imgYo" src="./public/yo.jpg" alt="yo" />
+              <h1 id="home-name">Leonel Gonzalez</h1>
+              <p id="home-nameDescription">Desarrollador Web Full Stack</p>
+            </div>
+          </div>
+          <span id="home-text">La foto la tome yo :3</span>
+        </section>
+        <section id="aboutMe">
+          <span id="observed-aboutMe" class="observed-elements"></span>
+          <div id="aboutMe-conteiner">
+            <div id="aboutMe-title">
+              <h2>Sobre mi</h2>
+              <span class="titleStick"></span>
+            </div>
+            <img src="./public/yoEntero.jpg" alt="yo entero" id="aboutMe-img" />
+            <p id="aboutMe-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
+              aliquam eligendi autem architecto dicta ea maxime alias, iure
+              fugit accusantium repudiandae, laboriosam, ipsam esse! Neque saepe
+              laboriosam minus est hic?Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Magnam officiis adipisci, eaque ratione,
+              doloremque praesentium doloribus quis accusamus, repellendus eos
+              earum. Iusto, doloremque. Alias, explicabo omnis. Aperiam, eos
+              illo. Possimus!
+            </p>
+          </div>
+        </section>
+        <section id="service">
+          <span id="observed-service" class="observed-elements"></span>
+          <h2 id="service-title">Servicio <span class="titleStick"> </span></h2>
+          <div id="service-conteinerCard">
+            <div class="service-card">
+              <img src="./public/service/device-desktop.png" class="card-img" />
+              <h3 class="card-title">Desarrollo web</h3>
+              <p class="card-description">
+                Transforma tus ideas en sitios web funcionales y atractivos.
+                Ofrezco soluciones de desarrollo web personalizadas que aseguran
+                una experiencia fluida y eficiente para tus usuarios, utilizando
+                las últimas tecnologías y mejores prácticas del sector.
+              </p>
+            </div>
+            <div class="service-card">
+              <img src="./public/service/tools UI-UX.png" class="card-img" />
+              <h3 class="card-title">UI/UX</h3>
+              <p class="card-description">
+                Diseña interfaces impactantes y altamente usables. Me
+                especializo en crear experiencias intuitivas que mejoran la
+                interacción del usuario y elevan la percepción de tu marca. Con
+                un enfoque en la estética y funcionalidad, transformo tus ideas
+                en diseños que encantan a tus usuarios.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <img src="./public/service/brush.png" class="card-img" />
+              <h3 class="card-title">Diseños creativos</h3>
+              <p class="card-description">
+                Haz que tu marca destaque con diseños únicos y creativos. Desde
+                logos hasta gráficos personalizados, te ofrezco soluciones de
+                diseño que capturan la esencia de tu negocio y atraen a tu
+                audiencia.
+              </p>
+            </div>
+            <div class="service-card">
+              <img src="./public/service/devices.png" class="card-img" />
+              <h3 class="card-title">Diseño responsivo</h3>
+              <p class="card-description">
+                Asegura que tu sitio web se vea y funcione perfectamente en
+                cualquier dispositivo. Especialista en diseño responsivo,
+                garantizo que tu contenido sea accesible y atractivo, ya sea en
+                una computadora de escritorio, una tableta o un smartphone.
+              </p>
+            </div>
+            <div class="service-card">
+              <img
+                src="./public/service/settings-search.png"
+                class="card-img"
+              />
+              <h3 class="card-title">Mantenimiento y optimizacion</h3>
+              <p class="card-description">
+                Mantén tu sitio web en óptimas condiciones con mis servicios de
+                mantenimiento y optimización. Realizo actualizaciones regulares,
+                mejoras de rendimiento y correcciones de errores para asegurar
+                que tu sitio siempre funcione a la perfección.
+              </p>
+            </div>
+          </div>
+          <a href="/moreDetailsService" id="service-moreDatils"
+            >Ver mas detalles</a
+          >
+        </section>
+        <section id="demo">
+          <span id="observed-demo" class="observed-elements"></span>
+          <h2 id="demo-title">Demos/proyectos <span class="titleStick"></span></h2>
+          <div id="demo-gallery">
+            <div class="demo-card">
+              <img
+                class="demo-img"
+                src="./public/demo/twitter-trucho.png"
+                alt="twitter-trucho"
+              />
+              <h3 class="demo-title">Twiter trucho</h3>
+              <p class="demo-description">
+                Este proyecto que he desarrollado es para replicar y simplificar
+                la experiencia de una de las plataformas sociales más populares.
+                Este proyecto destaca por su interfaz sencilla y amigable,
+                diseñada para ofrecer una experiencia de usuario intuitiva y
+                directa.
+              </p>
+              <div class="demo-conteinerLink">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  class="demo-linkSite"
+                  >Visitar</a
+                >
+                <a
+                  href="/moreDetailsPage?page=twitter-trucho"
+                  class="demo-linkMoreDetails"
+                  >Ver mas detalles</a
+                >
+              </div>
+            </div>
+            <div class="demo-card">
+              <img
+                class="demo-img"
+                src="./public/demo/rincon-de-la-cordillera.png"
+                alt="twitter-trucho"
+              />
+              <h3 class="demo-title">Rincon de la cordillera</h3>
+              <p class="demo-description">
+                Este proyecto es una aplicación web que combina una página de
+                menú atractiva para promocionar un complejo de cabañas con un
+                sistema de reservas para los clientes. Incluye un panel
+                administrativo para que el encargado pueda gestionar todos los
+                pedidos, su estado y la información de contacto relevante.
+              </p>
+              <div class="demo-conteinerLink">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  class="demo-linkSite"
+                  >Visitar</a
+                >
+                <a
+                  href="/moreDetailsPage?page=rincon-de-la-cordillera"
+                  class="demo-linkMoreDetails"
+                  >Ver mas detalles</a
+                >
+              </div>
+            </div>
+            <div class="demo-card">
+              <img
+                class="demo-img"
+                src="./public/demo/mensajeria-pala.png"
+                alt="twitter-trucho"
+              />
+              <h3 class="demo-title">Mensajeria pala</h3>
+              <p class="demo-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+                placeat consequuntur asperiores? Vero officia dolore cupiditate
+                pariatur dolorem. Quod facilis maxime ut est exercitationem
+                minima accusantium molestias iste ex tempore.
+              </p>
+              <div class="demo-conteinerLink">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  class="demo-linkSite"
+                  >Visitar</a
+                >
+                <a
+                  href="/moreDetailsPage?page=mensajeria-pala"
+                  class="demo-linkMoreDetails"
+                  >Ver mas detalles</a
+                >
+              </div>
+            </div>
+            <div class="demo-card">
+              <img
+                style="border: 2px solid #000"
+                class="demo-img"
+                src="./public/demo/ecomerce-olimpiadas.png"
+                alt="ecomerce-olimpiadas"
+              />
+              <h3 class="demo-title">Ecomerce olimpiadas</h3>
+              <p class="demo-description">
+                Este proyecto fue desarrollado para las super mega archi
+                profesional olimpiadas de programacion se realizo en argentina
+                el pais de los argentinos campeones del mundo 2022, copa america
+                2021 y 2024, finalisima 2022 y que se yo, tierra de Leonel.
+                Cuestión este proyecto es el mas crack porque mira esta
+                interfaz, hermosa UI/UX
+              </p>
+              <div class="demo-conteinerLink">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  class="demo-linkSite"
+                  >Visitar</a
+                >
+                <a
+                  href="/moreDetailsPage?page=ecomerce-olimpiadas"
+                  class="demo-linkMoreDetails"
+                  >Ver mas detalles</a
+                >
+              </div>
+            </div>
+            <div class="demo-card">
+              <img
+                class="demo-img"
+                src="./public/demo/tetris.png"
+                alt="twitter-trucho"
+              />
+              <h3 class="demo-title">Tetris</h3>
+              <p class="demo-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+                placeat consequuntur asperiores? Vero officia dolore cupiditate
+                pariatur dolorem. Quod facilis maxime ut est exercitationem
+                minima accusantium molestias iste ex tempore.
+              </p>
+              <div class="demo-conteinerLink">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  class="demo-linkSite"
+                  >Visitar</a
+                >
+                <a
+                  href="/moreDetailsPage?page=tetris"
+                  class="demo-linkMoreDetails"
+                  >Ver mas detalles</a
+                >
+              </div>
+            </div>
+            <div class="demo-card">
+              <img
+                class="demo-img"
+                src="./public/demo/binario.png"
+                alt="twitter-trucho"
+              />
+              <h3 class="demo-title">Cuenta en binario</h3>
+              <p class="demo-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+                placeat consequuntur asperiores? Vero officia dolore cupiditate
+                pariatur dolorem. Quod facilis maxime ut est exercitationem
+                minima accusantium molestias iste ex tempore.
+              </p>
+              <div class="demo-conteinerLink">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  class="demo-linkSite"
+                  >Visitar</a
+                >
+                <a
+                  href="/moreDetailsPage?page=tetris"
+                  class="demo-linkMoreDetails"
+                  >Ver mas detalles</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contactMe">
+          <span id="observed-contactMe" class="observed-elements"></span>
+          <div id="contactMe-info">
+            <h2 id="contactMe-title">
+              Contactame! <span class="titleStick"></span>
+            </h2>
+            <p>
+              Si deseas ponerte en contacto conmigo, puedes hacerlo a través de
+              mi correo electrónico, por teléfono o completando el formulario de
+              contacto. ¡Responderé lo antes posible! :D
+            </p>
+            <ul class="contactMe-ul">
+              <li>
+                <img
+                  src="./public/contactMe/brand-whatsapp.png"
+                  alt="brand-whatsapp"
+                  class="contactMe-icon"
+                />
+                +54 9 2945 50-5509
+              </li>
+              <li>
+                <img
+                  src="./public/contactMe/mail.png"
+                  alt="mail"
+                  class="contactMe-icon"
+                />
+                Leonelpala234@gmail.com
+              </li>
+            </ul>
+          </div>
+          <form id="form-contactMe">
+            <label for="name">Nombre</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="inputFocus"
+              autocomplete="off"
+            />
+
+            <label for="email">Correo electrónico</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="inputFocus"
+              autocomplete="off"
+            />
+
+            <label for="subject">Asunto</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              class="inputFocus"
+              autocomplete="off"
+            />
+
+            <label for="message">Mensaje</label>
+            <textarea
+              name="message"
+              id="message"
+              class="inputFocus"
+              autocomplete="off"
+            ></textarea>
+
+            <input type="submit" value="Enviar mensaje" id="form-submit" />
+          </form>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="./public/js/scroll.js"></script>
+    <script type="module" src="./public/js/activeNav.js"></script>
+  </body>
+</html>

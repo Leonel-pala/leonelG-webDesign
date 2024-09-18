@@ -1,0 +1,126 @@
+input[type='text'],
+input[type='submit'],
+input[type='email'],
+textarea,
+select {
+  margin: 13px 0;
+  padding: 5px;
+  border: 2px solid;
+  border-color: #ffffff00;
+  font-family: inherit;
+  box-shadow: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: border-color 0.2s ease-in-out;
+}
+input[type='text']:focus,
+input[type='submit']:focus,
+input[type='email']:focus,
+textarea:focus,
+select:focus {
+  border-color: #5e239d;
+}
+
+#form-contactMe {
+  position: relative;
+  width: 400px;
+  height: max-content;
+  background: #d5bcf0;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+#form-submit {
+  border: none;
+  cursor: pointer;
+  text-decoration: unset;
+  background: #5e239d;
+  color: #fff;
+  box-sizing: content-box;
+  top: 0;
+  padding: 5px 10px;
+  width: max-content;
+  margin: 0 auto;
+}
+
+label:nth-child(1) {
+  top: 37px;
+}
+
+label:nth-child(3) {
+  top: 98px;
+}
+label:nth-child(5) {
+  top: 159px;
+}
+label:nth-child(7) {
+  top: 220px;
+}
+
+label {
+  position: absolute;
+
+  user-select: none;
+  cursor: text;
+  color: #886fa3;
+  left: 25px;
+  font-size: 20px;
+  transition: 0.17s;
+}
+label.active {
+  color: #5e239d;
+  font-size: 16px;
+  transform: translateY(-26px);
+}
+
+#message {
+  resize: none;
+  max-width: 100%;
+  height: 150px;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  #form-contactMe {
+    width: 80%;
+    max-width: 450px;
+    margin: 0;
+  }
+  #form-submit {
+    font-size: 20px;
+  }
+
+  input[type='text'],
+  input[type='submit'],
+  input[type='email'],
+  textarea,
+  select {
+    font-size: 14px;
+  }
+  label:nth-child(1) {
+    top: 39px;
+  }
+
+  label:nth-child(3) {
+    top: 97px;
+  }
+  label:nth-child(5) {
+    top: 152px;
+  }
+  label:nth-child(7) {
+    top: 208px;
+  }
+
+  label {
+    font-size: 17px;
+  }
+  label.active {
+    color: #5e239d;
+    font-size: 16px;
+    transform: translateY(-26px);
+  }
+}

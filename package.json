@@ -1,0 +1,18 @@
+{
+  "name": "paginas-pala",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.3.4",
+    "vite-plugin-inspect": "^0.8.7"
+  },
+  "dependencies": {
+    "vite-plugin-pages": "^0.32.3"
+  }
+}

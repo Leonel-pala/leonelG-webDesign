@@ -1,0 +1,140 @@
+header {
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #441a70;
+  color: #fff;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+}
+#home-icon {
+  height: 30px;
+}
+#title {
+  color: #fff;
+}
+#img-logo {
+  height: 70px;
+}
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#indicator {
+  transition: 0.3s;
+  min-width: 54px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  top: auto;
+  bottom: 19px;
+  left: 9px;
+}
+.navSection {
+  text-decoration: none;
+  transition: 0.15s;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  padding: 5px 10px;
+}
+.navSection:nth-child(1).active ~ #indicator {
+  transform: translateX(0);
+  min-width: 54px;
+}
+.navSection:nth-child(2).active ~ #indicator {
+  transform: translateX(72px);
+  min-width: 86px;
+}
+.navSection:nth-child(3).active ~ #indicator {
+  transform: translateX(176px);
+  min-width: 76px;
+}
+.navSection:nth-child(4).active ~ #indicator {
+  transform: translateX(272px);
+  min-width: 56px;
+}
+.navSection:nth-child(5).active ~ #indicator {
+  transform: translateX(347px);
+  min-width: 114px;
+}
+.navSection:hover {
+  background: #00000031;
+}
+#icon-lines {
+  display: none;
+}
+#background-navActive {
+  display: none;
+}
+@media (max-width: 767px) {
+  header {
+    padding: 10px 10px;
+  }
+  #indicator {
+    display: none;
+  }
+
+  #background-navActive.show {
+    display: block;
+  }
+  #background-navActive {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background: #00000079;
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 90px;
+  }
+  .navSection:active,
+  .navSection:hover,
+  .navSection:visited {
+    background: transparent;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .navSection.active {
+    background: #4b1d7c;
+  }
+  #nav-page {
+    z-index: 2;
+    position: fixed;
+    top: 90px;
+    height: 100vh;
+    right: 0;
+    transform: translateX(200px);
+    background: #6228a0;
+    padding: 0 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+  }
+  #nav-page.show {
+    transform: translateX(0);
+  }
+  #icon-lines {
+    display: block;
+    width: 50px;
+    height: 40px;
+    margin: auto 0;
+    padding: 10px 5px;
+    border-radius: 8px;
+    transition: 0.2s;
+  }
+  #icon-lines.show {
+    background: #ffffff15;
+  }
+  .navSection {
+    width: 100%;
+  }
+}
