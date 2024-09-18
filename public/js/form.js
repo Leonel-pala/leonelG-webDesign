@@ -1,6 +1,7 @@
 const form = document.querySelector('#form-contactMe');
 const btnSubmit = document.getElementById('form-submit');
 const errorMessage = document.getElementById('errorMessage');
+const alertMessage = document.getElementById('alertMessage');
 let habilitar = true;
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -8,6 +9,7 @@ form.addEventListener('submit', (e) => {
     habilitar = false;
     btnSubmit.classList.add('load');
     btnSubmit.innerHTML = 'Enviando...';
+    alertMessage.innerHTML = 'Esto puede demorar unos segundos...';
     const formData = new FormData(form);
     const jsonData = {};
 
@@ -19,6 +21,7 @@ form.addEventListener('submit', (e) => {
       errorMessage.innerHTML = 'Todos los campos son obligatorios';
       btnSubmit.classList.remove('load');
       btnSubmit.innerHTML = 'Enviar mensaje';
+      alertMessage.innerHTML = '';
       habilitar = true;
       return;
     } else {
@@ -38,11 +41,13 @@ form.addEventListener('submit', (e) => {
         errorMessage.innerHTML =
           'Upsss.. surgio un error, intentelo de nuevo o mas tarde';
         habilitar = true;
+        alertMessage.innerHTML = '';
       })
       .then((response) => {
         form.reset();
         btnSubmit.classList.remove('load');
         btnSubmit.innerHTML = 'Enviar mensaje';
+        alertMessage.innerHTML = '';
 
         habilitar = true;
       });
