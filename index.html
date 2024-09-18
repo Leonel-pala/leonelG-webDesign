@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-
+    
+    
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/home.css" />
@@ -17,6 +16,7 @@
     <link rel="stylesheet" href="./css/form.css" />
     <link rel="stylesheet" href="./css/contactMe.css" />
     <title>LeoG. WebDesign</title>
+    <link rel="icon" type="image/svg+xml" href="/logoHeader.png" />
   </head>
   <body>
       <header>
@@ -352,11 +352,11 @@
               autocomplete="off"
             />
 
-            <label for="subject">Asunto</label>
+            <label for="numberPhone">Numero de telefono</label>
             <input
               type="text"
-              name="subject"
-              id="subject"
+              name="numberPhone"
+              id="numberPhone"
               class="inputFocus"
               autocomplete="off"
             />
@@ -368,14 +368,15 @@
               class="inputFocus"
               autocomplete="off"
             ></textarea>
-
-            <input type="submit" value="Enviar mensaje" id="form-submit" />
+              <p id="messageError"></p>
+            <button type="submit" id="form-submit">Enviar mensaje</button>
           </form>
         </section>
       </main>
       <footer></footer>
     </div>
     <script type="module" src="/main.js"></script>
+    <script type="module" src="./public/js/form.js"></script>
     <script type="module" src="./public/js/scroll.js"></script>
     <script type="module" src="./public/js/activeNav.js"></script>
   </body>
