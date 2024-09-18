@@ -40,6 +40,10 @@
   grid-row-start: 2;
   grid-row-end: 3;
 }
+#errorMessage {
+  color: #f00;
+  margin-bottom: 13px;
+}
 
 @media (max-width: 910px) and (min-width: 767px) {
   #contactMe-info {
