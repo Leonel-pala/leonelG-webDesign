@@ -1,6 +1,6 @@
 const form = document.querySelector('#form-contactMe');
 const btnSubmit = document.getElementById('form-submit');
-const errorMessage = document.querySelector('#errorMessage');
+const errorMessage = document.getElementById('errorMessage');
 let habilitar = true;
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -19,7 +19,6 @@ form.addEventListener('submit', (e) => {
       errorMessage.innerHTML = 'Todos los campos son obligatorios';
       btnSubmit.classList.remove('load');
       btnSubmit.innerHTML = 'Enviar mensaje';
-
       habilitar = true;
       return;
     } else {

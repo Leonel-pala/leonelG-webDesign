@@ -47,6 +47,10 @@ select:focus {
   width: max-content;
   margin: 0 auto;
 }
+#form-submit.load {
+  background: #903ee7;
+  cursor: default;
+}
 
 label:nth-child(1) {
   top: 37px;
